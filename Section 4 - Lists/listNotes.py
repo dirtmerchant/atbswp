@@ -133,3 +133,53 @@ Index 11 in supplies is: pens
 >>> spam += 1
 >>> spam
 44
+
+##methods
+>>> spam = ['hello', 'hi', 'howdy', 'heyas']
+>>> spam.index('hello')
+0
+>>> spam.index('heyas')
+3
+>>> spam.index('foo')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'foo' is not in list
+>>> spam = ['sophie', 'pooka', 'fat-tail', 'pooka']
+>>> spam.index('pooka')
+1
+
+>>> spam.append('moose')
+>>> spam
+['cat', 'dog', 'bat', 'moose']
+
+>>> spam = ['cat', 'dog', 'bat']
+>>> spam.insert(1, 'chicken')
+>>> spam
+['cat', 'chicken', 'dog', 'bat']
+
+>>> spam.append('moose')
+>>> spam
+['cat', 'chicken', 'dog', 'bat', 'moose']
+>>> spam.append('moose')
+>>> spam
+['cat', 'chicken', 'dog', 'bat', 'moose', 'moose']
+
+>>> spam.remove('bat')
+>>> spam
+['cat', 'chicken', 'dog', 'moose', 'moose']
+
+>>> spam
+[2, 5, 3.14, 1, -7]
+>>> spam.sort()
+>>> spam
+[-7, 1, 2, 3.14, 5]
+>>> spam.sort(reverse=True)
+>>> spam
+[5, 3.14, 2, 1, -7]
+
+>>> spam = ['a', 'z', 'A', 'Z']
+>>> spam.sort(key=str.lower)
+>>>
+>>>
+>>> spam
+['a', 'A', 'z', 'Z']
