@@ -1,4 +1,5 @@
-#message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+import pprint
+
 message = '''The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
 
 This eBook is for the use of anyone anywhere at no cost and with
@@ -4860,4 +4861,4 @@ for character in message.upper():
     count.setdefault(character, 0)
     count[character] = count[character] + 1
 
-print(count)
+pprint.pprint(count)
