@@ -42,4 +42,25 @@
 -+-+-
  | |
 
- 
+##type
+
+>>> type(42)
+<class 'int'>
+>>> type('hello')
+<class 'str'>
+>>> type(3.14)
+<class 'float'>
+>>> type(theBoard)
+<class 'dict'>
+>>> type(theBoard['top-R'])
+<class 'str'>
+>>> pprint.pprint(theBoard)
+{'low-L': ' ',
+ 'low-M': ' ',
+ 'low-R': ' ',
+ 'mid-L': ' ',
+ 'mid-M': ' ',
+ 'mid-R': ' ',
+ 'top-L': ' ',
+ 'top-M': ' ',
+ 'top-R': ' '}
