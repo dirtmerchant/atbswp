@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 #spam = 42 # global variable
 #
 #def eggs():
