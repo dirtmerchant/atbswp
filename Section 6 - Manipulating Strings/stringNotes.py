@@ -120,3 +120,17 @@ AttributeError: 'str' object has no attribute 'repplace'
 >>> pyperclip.paste()
 'Hello!!!!'
 >>>
+
+
+>>> name = 'Alice'
+>>> place = 'Main Street'
+>>> time = '6 pm'
+>>> food = 'turnips'
+>>> 'Hello ' + name + ', you are invited to a party at ' + place + ' at ' + time + '. Please bring ' + food + '.'
+'Hello Alice, you are invited to a party at Main Street at 6 pm. Please bring turnips.'
+>>>
+>>>
+>>>
+>>> 'Hello %s, you are invited to a part at %s at %s. Please bring %s.' % (name, place, time, food)
+'Hello Alice, you are invited to a part at Main Street at 6 pm. Please bring turnips.'
+>>>
