@@ -17,3 +17,17 @@ def isPhoneNumber(text):
         if not text[i].isdecimal():
             return False # missing last 4 digits
     return True
+
+
+#print(isPhoneNumber('415-555-1234'))
+#print(isPhoneNumber('hello'))
+
+message = 'Call me at 415-555-1011 tomorrow, or at 415-555-1234.'
+foundNumber = False
+for i in range(len(message)):
+    chunk = message[i:i+12]
+    if isPhoneNumber(chunk):
+        print('Phone number found: ' + chunk)
+        foundNumber = True
+if not foundNumber:
+    print('Could not find any phone numbers.')
